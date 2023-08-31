@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string,
+	description: string,
+	image: ImageMetadata
+}
+
+const {title, description, image} = Astro.props
+---
+
+<a href="/" class="group/card shrink-0 shadow-md hover:shadow-2xl transition max-w-[350px] bg-gray-100 rounded-md overflow-clip">
+	<img width="200" height="150"  src={image.src} alt="Blog cover" class="w-full aspect-[16/9] object-cover">
+	<div class="px-3 py-2 grid gap-y-1">
+		<div class="text-xl font-semibold">
+			<div class="group-hover/card:opacity-70 " >
+				{title}
+			</a>
+		</div>
+		<div class="opacity-80 text-sm">{description}...</div>
+	</div>
+</div>

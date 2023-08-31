@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+import Typro from '../media/typro.jpeg'
+
 ---
 
 <Layout title="SiddhantSoftware">
@@ -14,8 +17,20 @@ import Layout from '../layouts/Layout.astro'
 			</div>
 		</div>
 		<div class="bg-white py-10 text-black px-10">
-			<div class="text-3xl font-semibold">
-				Latest Projects
+			<div class="text-4xl  font-semibold">
+				Latest Blogs
+			</div>
+			<div class="flex px-3 py-5 gap-x-4 overflow-x-scroll">
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
+			
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
+			
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
+
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
+			
+				<ProjectCard image={Typro} title={"This is about Typro my new project"} description='Yeha so this is the MENAs first touch typing competition and what not woah woah' />	
 			</div>
 		</div>
 	</main>
